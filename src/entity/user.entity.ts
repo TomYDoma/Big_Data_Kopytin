@@ -24,7 +24,7 @@ export class User {
   @OneToMany((type) => Order, (order) => order.User)
   orders: Order[];
 
-  @OneToMany((type) => Photo, (photo) => photo.Photo) // specify inverse side as a second parameter
+  @OneToMany((type) => Photo, (photo=) => photo.Photo) // specify inverse side as a second parameter
   Photo: Photo;
 
   @Column({
