@@ -1,13 +1,13 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { statusOrder } from "./entity/statusOrder.entity";
 import { User } from './entity/user.entity';
 import { Order } from './entity/order.entity';
-import { Discount } from "./entity/discount.entity";
+import { Discount } from './entity/discount.entity';
+import { statusOrder } from './entity/statusOrder.entity';
 import { DiscountModule } from './DiscountModule/discount.module';
-import { UserModule } from "./UserModule/user.module";
-import { OrderModule } from "./OrderModule/order.module";
-import { StatusModule } from "./StatusModule/status.module";
+import { UserModule } from './UserModule/user.module';
+import { OrderModule } from './OrderModule/order.module';
+import { StatusModule } from './StatusModule/status.module';
 
 @Module({
   imports: [

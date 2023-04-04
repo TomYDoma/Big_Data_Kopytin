@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { User } from '../entity/user.entity';
-import { Discount } from "../entity/discount.entity";
-import { Order } from "../entity/order.entity";
+import { Discount } from '../entity/discount.entity';
+import { Order } from '../entity/order.entity';
 
 @Injectable()
 export class DiscountService {
